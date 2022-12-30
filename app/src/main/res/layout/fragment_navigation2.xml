@@ -5,6 +5,31 @@
     android:layout_height="match_parent"
     tools:context=".Navigation2Fragment">
 
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Write your email here"
+        android:layout_below="@+id/name"
+        />
+
+    <Button
+        android:id="@+id/btnpdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert to PDF"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/email"/>
+
+    <Button
+        android:id="@+id/btnview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View PDF"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/btnpdf"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
