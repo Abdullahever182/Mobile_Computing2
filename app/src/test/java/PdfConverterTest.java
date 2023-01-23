@@ -18,7 +18,7 @@ public class PdfConverterTest {
     public void convert() throws Exception {
         Path path = copyToTmp();
         File dest = new File(path.toFile(), "mobydick.epub");
-        Navigation2Fragment.PdfConverter
+        PdfConverterTest.PdfConverter
                 .convert(new File(path.toFile(), "mobydick.pdf"))
                 .intoEpub("Moby Dick", dest);
         Assert.assertTrue(dest.exists());
